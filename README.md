@@ -1,8 +1,8 @@
 # Linear Time Selection
 
-Implements the Selection algorithm as described by Blum, Floyd, Pratt, Rivest, and Tarjan. It runs in O(n) time complexity with the best case being O(1) in case of a sorted array. Implementation is provided as `LinearTimeSelection` class contained in the package `io.gitbub.thehappybug.Algorithms`.
+Implements the *Selection algorithm* as described by Blum, Floyd, Pratt, Rivest, and Tarjan. It runs in `O(n)` time complexity with the best case being O(1) in case of a sorted array. Implementation is provided as `LinearTimeSelection` class contained in the package `io.gitbub.thehappybug.Algorithms`.
 
-> See [http://en.wikipedia.org/wiki/Selection_algorithm](Wikipedia) for more information on Selection algorithm.
+> See [http://en.wikipedia.org/wiki/Selection_algorithm](Wikipedia) for more information on the Selection algorithm.
 
 ## Compiling
 
@@ -49,28 +49,28 @@ $ java io.github.thehappybug.Algorithms.LinearTimeSelection 5 sample_input.txt
 The program requires two arguments: the position, `n` and a file containing a space-separated integer list.
 
 
-## Documentation of Public Interface of the Class
+## Documentation (Public)
 
-### `public class LinearTimeSelection`
+**`public class LinearTimeSelection`**
 
 Algorithm to select n-th element from a list
 
-### `public static void main(String[] args)`
+**`public static void main(String[] args)`**
 
 Main program to select n-th element in an array Input file should contain space separated integer numbers.
 
  * **Parameters:** `args` — "Position" and "input filename" required as arguments to program
 
-### `public LinearTimeSelection(List<Integer> list)`
+**`public LinearTimeSelection(List<Integer> list)`**
 
 Create a selection algorithm bound to a list
 
  * **Parameters:** `list` — List
 
 
-## Documentation for Private Members of the Class
+## Documentation (Private)
 
-### `private static List<Integer> readFromFile(String path) throws IOException`
+**`private static List<Integer> readFromFile(String path) throws IOException`**
 
 Read a space-separated integer list from file.
 
@@ -78,7 +78,7 @@ Read a space-separated integer list from file.
  * **Returns:** Integer list
  * **Exceptions:** `IOException` — Thrown when unable to open or read file
 
-### `public int run(int order) throws IllegalArgumentException`
+**`public int run(int order) throws IllegalArgumentException`**
 
 Run the selection algorithm
 
@@ -86,7 +86,7 @@ Run the selection algorithm
  * **Returns:** Element found
  * **Exceptions:** `IllegalArgumentException` — If the position is out-of-bounds
 
-### `private int run(List<Integer> list, int order)`
+**`private int run(List<Integer> list, int order)`**
 
 Run the selection algorithm on the given list
 
@@ -95,14 +95,14 @@ Run the selection algorithm on the given list
    * `order` — The position of element to be found
  * **Returns:** Element
 
-### `private int choosePivot(List<Integer> list)`
+**`private int choosePivot(List<Integer> list)`**
 
 Choose a pivot from list using the median-of-medians method
 
  * **Parameters:** `list` — List
  * **Returns:** Pivot selected
 
-### `private void swap(List<Integer> list, int a, int b)`
+**`private void swap(List<Integer> list, int a, int b)`**
 
 Swap two integers in an array
 
@@ -111,7 +111,7 @@ Swap two integers in an array
    * `a` — position1
    * `b` — position2
 
-### `private int partition(List<Integer> arr, int x)`
+**`private int partition(List<Integer> arr, int x)`**
 
 Partition array based on a pibot
 
