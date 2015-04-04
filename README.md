@@ -67,6 +67,14 @@ Create a selection algorithm bound to a list
 
  * **Parameters:** `list` — List
 
+**`public int run(int order) throws IllegalArgumentException`**
+
+Run the selection algorithm
+
+ * **Parameters:** `order` — The position of element to find
+ * **Returns:** Element found
+ * **Exceptions:** `IllegalArgumentException` — If the position is out-of-bounds
+ 
 
 ## Documentation (Private)
 
@@ -77,14 +85,6 @@ Read a space-separated integer list from file.
  * **Parameters:** `path` — Path of file
  * **Returns:** Integer list
  * **Exceptions:** `IOException` — Thrown when unable to open or read file
-
-**`public int run(int order) throws IllegalArgumentException`**
-
-Run the selection algorithm
-
- * **Parameters:** `order` — The position of element to find
- * **Returns:** Element found
- * **Exceptions:** `IllegalArgumentException` — If the position is out-of-bounds
 
 **`private int run(List<Integer> list, int order)`**
 
